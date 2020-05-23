@@ -1,3 +1,6 @@
+//7 Hours 2 Minutes for reducer information to make it connect
+
+
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 import withStyles from '@material-ui/core/styles/withStyles';
@@ -8,10 +11,14 @@ import { connect } from 'react-redux';
 
 // Icons
 
+const styles = {};
 
 class Profile extends Component {
   render() {
-    const { classes, user: { credentials: { handle, createdAt, imageUrl, bio, website, location}, loading}} = this.props
+    const { classes, 
+      user: { credentials: { handle, createdAt, imageUrl, bio, website, location}, loading
+      }
+    } = this.props
     return (
       <div>
         
